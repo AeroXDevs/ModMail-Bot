@@ -1,0 +1,17 @@
+{
+  "name": "modmail-bot",
+  "version": "1.0.0",
+  "description": "A thread-based modmail bot for Discord",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": ["discord", "bot", "modmail"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5"
+  }
+}
