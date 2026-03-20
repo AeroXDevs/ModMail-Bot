@@ -2,7 +2,7 @@ module.exports = {
     async getUserIdFromThread(thread) {
         try {
             // Fetch the first few messages in the thread to find the User ID
-            const messages = await thread.messages.fetch({ limit: 5 });
+            const messages = await thread.messages.fetch({ limit: 5, after: '0' });
 
             for (const msg of messages.values()) {
                 // Check message content for ID patterns
